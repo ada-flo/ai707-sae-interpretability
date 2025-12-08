@@ -1,7 +1,17 @@
 [project]
 name = "exp-sae-lens"
 version = "0.1.0"
-requires-python = ">=3.12"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
 dependencies = [
+    "nbformat>=5.10.4",
+    "pip>=25.3",
+    "sae-dashboard>=0.7.3",
     "sae-lens>=6.22.3",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.1.0",
 ]
