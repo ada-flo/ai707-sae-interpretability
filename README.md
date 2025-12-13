@@ -12,3 +12,8 @@ It serves as a workspace for exploring, analyzing, and training SAEs to understa
 
 - **`docs/`**: Contains guidelines and onboarding resources (e.g., path to mastering SAEs).
 - **`experiments/`**: Stores experimental code and notebooks (e.g., `exp-sae-lens`).
+
+## WanDB Acc
+
+lasip21784@alexida.com
+Aa00990099
