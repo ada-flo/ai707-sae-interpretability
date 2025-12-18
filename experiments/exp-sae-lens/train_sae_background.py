@@ -145,10 +145,9 @@ from transformers import AutoModelForCausalLM
 hf_model = AutoModelForCausalLM.from_pretrained(
     CUSTOM_MODEL_PATH,
     token=hf_token,
-    torch_dtype=torch.bfloat16,
     device_map='auto',
+    load_in_8bit=True,  # 8-bit quantization: ~70GB → ~35GB
     low_cpu_mem_usage=True,
-    max_memory={0: "18GB", 1: "18GB", 2: "18GB", 3: "18GB"},  # Reserve 18GB per GPU
 )
 
 print(f"✓ Model loaded: {hf_model.config.model_type}")
